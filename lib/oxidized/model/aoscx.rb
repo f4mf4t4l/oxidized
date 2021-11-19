@@ -51,19 +51,7 @@ class Aoscx < Oxidized::Model
     comment cfg
   end
 
-  cmd ' show environment' do |cfg|
-    comment cfg
-  end
-
-  cmd 'show module' do |cfg|
-    comment cfg
-  end
-
   cmd 'show interface transceiver' do |cfg|
-    comment cfg
-  end
-
-  cmd 'show system' do |cfg|
     comment cfg
   end
 
