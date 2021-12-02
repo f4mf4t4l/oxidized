@@ -11,7 +11,7 @@ class HPEBladeSystem < Oxidized::Model
 
   cmd :all do |cfg|
     cfg = cfg.delete("\r").each_line.to_a[0..-1].map { |line| line.rstrip }.join("\n") + "\n"
-    cfg.cut_tail
+    cfg.each_line.to_a[0..-2].join
   end
 
   cmd :secret do |cfg|
